@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>Form test</title>
+<style>
+div.relative {
+    position: relative;
+    left: 500px;
+    bottom: -250px;
+
+}
+
+div.relativee {
+  position: relative;
+  left: 500px;
+  bottom: -270px;
+}
+div.relative1 {
+  position: relative;
+  left: 500px;
+  bottom: -290px;
+}
+
+</style>
+<body style="background-color:powderblue;">
+  <form action="/action_page.php">
+
+<div class="relative">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" id= "input1" placeholder="Enter Username" name="uname" required>
+</div>
+<div class="relativee">
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+</div>
+<div class= "relative1">
+  <input type="button" onclick="location.href='page.php';" value="LogIn" />
+
+    <input type="button" onclick="location.href='registration.php';" value="Register" />
+</div>
+
+
+
+
+
+
+
+  </form>
+  <script>
+  document.getElementById("divv").style.left = "200px";
+  </script>
+</body>
+
+</html>
